@@ -23,7 +23,7 @@
                 </div>
         
                 <ul class="list-unstyled components">
-                    <p>Resumen</p>
+                    <!--p>Resumen</p-->
                     <li class="active">
                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Empleos</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
@@ -63,19 +63,49 @@
                     </li>
                 </ul>
             </nav>
+
+            <nav id="responsive-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Resumen <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Empleos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#">Portafolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             
             <div id="content">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
             
                         <button type="button" id="sidebarCollapse" class="btn btn-info">
-                            <i class="fas fa-align-left"></i>
+                            <i class="fas fa-bars"></i>
                             <span></span>
                         </button>
             
                     </div>
                 </nav>
-                <!--div class="contaner-fluid">
+                <div class="contaner-fluid">
                     <div class="">
                         <div class="col">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit rem, quos quaerat reprehenderit earum provident incidunt delectus praesentium iure nulla ullam perferendis doloribus ab commodi minima nisi, laborum qui.</p>
@@ -101,7 +131,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit rem, quos quaerat reprehenderit earum provident incidunt delectus praesentium iure nulla ullam perferendis doloribus ab commodi minima nisi, laborum qui.</p>
                         </div>
                     </div>
-                </div-->
+                </div>
             </div>
 
         </div>

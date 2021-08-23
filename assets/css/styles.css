@@ -4,6 +4,16 @@
     align-items: stretch;
 }
 
+#content {
+    height: 100vh;
+}
+
+@media (min-width: 576px) {
+    #content {
+        overflow-y: scroll;
+    }
+}
+
 /*#sidebar {
     min-width: 250px;
     max-width: 250px;
@@ -26,12 +36,39 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 
-@media (max-width: 768px) {
+#navbar {
+    transition: height 0.5s;
+}
+
+/*@media (max-width: 768px) {*/
     #sidebar {
         margin-left: -250px;
     }
     #sidebar.active {
         margin-left: 0;
+    }
+/*}*/
+
+#sidebar a {
+    color: rgba(255,255,255,.5);
+}
+
+#sidebar a:hover {
+    color: rgba(255,255,255,.75);
+}
+
+@media (max-width: 576px) {
+    #sidebar {
+        display: none;
+    }
+    #content > nav {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    #responsive-navbar {
+        display: none;
     }
 }
 
@@ -58,7 +95,6 @@ a, a:hover, a:focus {
 }
 
 #sidebar {
-    /* don't forget to add all the previously mentioned styles here too */
     min-width: 250px;
     max-width: 250px;
     /*min-height: 100vh;*/
@@ -66,10 +102,13 @@ a, a:hover, a:focus {
     background: #222629;
     color: #fff;
     transition: all 0.3s;
+    /*position: sticky;*/
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: 0;
 }
 
 #sidebar .sidebar-header {
