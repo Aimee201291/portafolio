@@ -6,11 +6,12 @@
 
 #content {
     height: 100vh;
+    width: 100%;
 }
 
 @media (min-width: 576px) {
     #content {
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 }
 
@@ -104,7 +105,7 @@ a, a:hover, a:focus {
     transition: all 0.3s;
     /*position: sticky;*/
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #sidebar.active {
@@ -145,3 +146,64 @@ ul ul a {
     padding-left: 30px !important;
     /*background: #6d7fcc;*/
 }
+
+#hero {
+    padding: 60px;
+}
+
+#hero h1 {
+    font-weight: 700;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+    /*color: #17a2b8;
+    font-family: monospace;*/
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #17a2b8; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+    max-width: 270px;
+  }
+
+  .typewriter p {
+    color: #17a2b8;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 380px) {
+    .typewriter p {
+        font-size: 0.8rem;
+    } 
+  }
+
+  @media (max-width: 380px) {
+    .typewriter {
+        max-width: 160px;
+    } 
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #17a2b8 }
+  }
+
+  #hero i {
+      font-size: 1.8rem;
+  }
+
+  #hero i:hover {
+      color: #17a2b8;
+  }
