@@ -147,7 +147,7 @@ ul ul a {
     /*background: #6d7fcc;*/
 }
 
-#hero {
+#hero, #aboutMe {
     padding: 60px;
 }
 
@@ -207,3 +207,81 @@ ul ul a {
   #hero i:hover {
       color: #17a2b8;
   }
+
+  #aboutMe h2, #projects h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*margin-bottom: 10px;
+    padding-bottom: 10px;*/
+    /*position: relative;*/
+    color: #45505b;
+  }
+
+ /*#aboutMe h2:after {
+    content:' ';
+    display:block;
+    border: 2px solid #17a2b8;
+    margin-top: 1.5rem;
+ }*/
+
+ .title-line {   
+    background-color: #17a2b8;
+    display: inline-block;
+    height: 3px;
+    margin-bottom: 16px;
+    width: 60px;
+}
+
+.html-badge {
+    background-color: #f06529;
+    color: white;
+}
+
+.css-badge {
+    background-color: #42a5f5;
+    color: white;
+}
+
+.wordpress-badge {
+    background: #21759b;
+    color: white;
+}
+
+.asp-net-badge {
+    background: #7f59ad;
+    color: white;
+}
+
+.sql-server-badge {
+    background: #b7b9c0;
+    color: white;
+}
+
+.angularjs-badge {
+    background: #e43436;
+    color: white;
+}
+
+.bootstrap-badge {
+    background: #59287a;
+    color: white;
+}
+
+.java-badge {
+    background: #304bc8;
+    color: white;
+}
+
+.spring-badge {
+    background: #59a25d;
+    color: white;
+}
+
+.card-img {
+    height: 240px;
+}
+
+.carousel-control-prev span, .carousel-control-next span {
+    background-color: rgba(117,131,144, .8);
+}
