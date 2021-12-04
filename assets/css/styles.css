@@ -1,6 +1,5 @@
 .wrapper {
     display: flex;
-    /*width: 100%;*/
     align-items: stretch;
 }
 
@@ -14,16 +13,6 @@
         overflow-y: auto;
     }
 }
-
-/*#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    max-height: 100vh;
-}*/
-
-/*#sidebar.active {
-    margin-left: -250px;
-}*/
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -41,14 +30,12 @@ a[data-toggle="collapse"] {
     transition: height 0.5s;
 }
 
-/*@media (max-width: 768px) {*/
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-/*}*/
+#sidebar {
+    margin-left: -250px;
+}
+#sidebar.active {
+    margin-left: 0;
+}
 
 #sidebar a {
     color: rgba(255,255,255,.5);
@@ -71,6 +58,15 @@ a[data-toggle="collapse"] {
     #responsive-navbar {
         display: none;
     }
+}
+
+#sidebarCollapse {
+    position: fixed;
+    top: 0.5rem;
+}
+
+.navbar-collapse li a {
+    font-size: 1.1em;
 }
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
@@ -98,12 +94,9 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    /*min-height: 100vh;*/
-    /*background: #7386D5;*/
     background: #222629;
     color: #fff;
     transition: all 0.3s;
-    /*position: sticky;*/
     height: 100vh;
     overflow-y: auto;
 }
@@ -114,12 +107,10 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    /*background: #6d7fcc;*/
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    /*border-bottom: 1px solid #47748b;*/
 }
 
 #sidebar ul p {
@@ -132,6 +123,7 @@ a, a:hover, a:focus {
     font-size: 1.1em;
     display: block;
 }
+
 #sidebar ul li a:hover {
     /*color: #7386D5;*/
     /*background: #fff;*/
@@ -147,7 +139,7 @@ ul ul a {
     /*background: #6d7fcc;*/
 }
 
-#hero, #aboutMe {
+#hero, #aboutMe, #projects, #technologies, #contact {
     padding: 60px;
 }
 
@@ -167,7 +159,7 @@ ul ul a {
     animation: 
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
-    max-width: 270px;
+    max-width: 320px;
   }
 
   .typewriter p {
@@ -208,7 +200,7 @@ ul ul a {
       color: #17a2b8;
   }
 
-  #aboutMe h2, #projects h2 {
+  #aboutMe h2, #projects h2, #technologies h2, #contact h2 {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -243,7 +235,7 @@ ul ul a {
     color: white;
 }
 
-.wordpress-badge {
+.wordpress-badge, .postgresql-badge {
     background: #21759b;
     color: white;
 }
@@ -284,4 +276,17 @@ ul ul a {
 
 .carousel-control-prev span, .carousel-control-next span {
     background-color: rgba(117,131,144, .8);
+}
+
+.btn-send-message {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-send-message:hover {
+    background-color: #337a85;
+}
+
+.input-required {
+    color: red;
 }
