@@ -14,18 +14,22 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     </head>
     <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+        <!-- Preloader -->
         <div class="wrapper">
             <!-- Sidebar -->
             <nav id="sidebar" class="text-center">
                 <div class="sidebar-header">
-                    <!--<h3>Bootstrap Sidebar</h3>-->
-                    <img src="assets/img/photo.jpg" style="width:150px; height: 150px; border-radius: 50%;">
+                    <img class="profile-image" src="assets/img/photo.jpg">
                     <h1 class="h3">Aimee Rodríguez</h1>
-                    <p>Ingeniero Informático y desarrolladora full stack</p>
+                    <p>Ingeniero en Informática y desarrolladora full stack</p>
                 </div>
         
                 <ul class="list-unstyled components">
-                    <!--p>Resumen</p-->
                     <li>
                         <a href="#aboutMe">Sobre mí</a>
                     </li>
@@ -40,7 +44,8 @@
                     </li>
                 </ul>
             </nav>
-
+            <!-- Sidebar -->
+            <!-- Navbar -->
             <nav id="responsive-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -63,14 +68,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#contact">Contácto</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="modal" data-target="#">Portafolio</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            
+            <!-- Navbar -->
             <div id="content">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
@@ -92,12 +94,25 @@
                                     <p>Full stack developer</p>
                                 </div>
                             </div>
-                            <div class="col-sm-12 text-center">
-                                <a href="https://stackoverflow.com/users/10844676/aimee-rodr%c3%adguez" target="_blank"><i class="fab fa-stack-overflow mr-4"></i></a>
-                                <a href="https://www.linkedin.com/in/aimee-rodr%C3%ADguez-88b79a203/" target="_blank"><i class="fab fa-linkedin-in mr-4"></i></a>
-                                <a href="https://www.hackerrank.com/amylinsy" target="_blnak"><i class="fab fa-hackerrank mr-4"></i></a>
-                                <a href="mailto:amylinsy@gmail.com"><i class="far fa-envelope mr-4"></i></a>
+                        </div>
+                        <div class="row text-center mt-2">
+                            <div class="col-md-2 mb-2">
+                                <a href="https://stackoverflow.com/users/10844676/aimee-rodr%c3%adguez" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <a href="https://www.linkedin.com/in/aimee-rodr%C3%ADguez-88b79a203/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <a href="https://www.hackerrank.com/amylinsy" target="_blnak"><i class="fab fa-hackerrank"></i></a>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <a href="mailto:amylinsy@gmail.com"><i class="far fa-envelope"></i></a>
+                            </div>
+                            <div class="col-md-2 mb-2">
                                 <a href="http://wa.me/+584242234289" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                            <div class="col-md-2 mb-2">
+                                <a href="https://github.com/Aimee201291" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -108,7 +123,10 @@
                         <div class="">
                             <h2 class="mb-4">Sobre mí</h2>
                             <span class="title-line"></span>
-                            <p>Me encuentro en la búsqueda de nuevas oportuniades en el sector de IT. Soy una persona apasionada por el desarrollo de software, adicta al conocimiento, proactiva, con capacidades para transmitir conocimientos y trabajar en equipo.</p>
+                            <p>Me encuentro en la búsqueda de nuevas oportunidades en el sector de
+                               IT. Soy una persona apasionada por el desarrollo de software, 
+                               adicta al conocimiento, proactiva, con capacidades para transmitir 
+                               conocimientos y trabajar en equipo.</p>
                         </div>
                     </div>
                 </section>
@@ -122,9 +140,8 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card">
-                                    <img class="card-img-top card-img" src="assets/img/projects/doropharma.JPG" alt="Foto de Sacha">
+                                    <img class="card-img-top card-img" src="assets/img/projects/doropharma.JPG" alt="Doropharma">
                                     <div class="card-body">
-                                        <!-- Ir a https://getbootstrap.com/docs/4.1/components/badge/ -->
                                         <h5 class="card-title">Doropharma</h5>
                                         <p class="card-text">Sitio web para Doropharma</p>
                                         <div class="badges">
@@ -142,9 +159,8 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card">
-                                    <img class="card-img-top card-img" src="assets/img/projects/alejandrobrito.JPG" alt="Foto de Sacha">
+                                    <img class="card-img-top card-img" src="assets/img/projects/alejandrobrito.JPG" alt="Alejandro Brito">
                                     <div class="card-body">
-                                        <!-- Ir a https://getbootstrap.com/docs/4.1/components/badge/ -->
                                         <h5 class="card-title">Alejandro Brito</h5>
                                         <p class="card-text">Sitio web para el artista venezolano Alejandro Brito</p>
                                         <div class="badges">
@@ -162,9 +178,8 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card">
-                                    <img class="card-img-top card-img" src="assets/img/projects/vip_platinum_services.jpg" alt="Foto de Sacha">
+                                    <img class="card-img-top card-img" src="assets/img/projects/vip_platinum_services.jpg" alt="Vip Platinum Services">
                                     <div class="card-body">
-                                        <!-- Ir a https://getbootstrap.com/docs/4.1/components/badge/ -->
                                         <h5 class="card-title">Vip Platinum Services</h5>
                                         <p class="card-text">Sitio web para Vip Platinum Services</p>
                                         <div class="badges">
@@ -182,9 +197,8 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card">
-                                    <img class="card-img-top card-img" src="assets/img/projects/smartcad_web.png" alt="Foto de Sacha">
+                                    <img class="card-img-top card-img" src="assets/img/projects/smartcad_web.png" alt="SmartCAD Web">
                                     <div class="card-body">
-                                        <!-- Ir a https://getbootstrap.com/docs/4.1/components/badge/ -->
                                         <h5 class="card-title">SmartCAD Web</h5>
                                         <p class="card-text">Aplicación para Smartmatic</p>
                                         <div class="badges">
@@ -206,9 +220,8 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card">
-                                    <img class="card-img-top card-img" src="assets/img/projects/sckola.png" alt="Foto de Sacha">
+                                    <img class="card-img-top card-img" src="assets/img/projects/sckola.png" alt="Sckola Web">
                                     <div class="card-body">
-                                        <!-- Ir a https://getbootstrap.com/docs/4.1/components/badge/ -->
                                         <h5 class="card-title">Sckola Web</h5>
                                         <p class="card-text">Aplicación web</p>
                                         <div class="badges">
@@ -230,9 +243,8 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card">
-                                    <img class="card-img-top card-img" src="assets/img/projects/ba_back_office.png" alt="Foto de Sacha">
+                                    <img class="card-img-top card-img" src="assets/img/projects/ba_back_office.png" alt="Back Office">
                                     <div class="card-body">
-                                        <!-- Ir a https://getbootstrap.com/docs/4.1/components/badge/ -->
                                         <h5 class="card-title">Back Office Banco Atlántida</h5>
                                         <p class="card-text">Back Office para el Banco Atlántida</p>
                                         <div class="badges">
@@ -251,10 +263,9 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card">
-                                    <img class="card-img-top card-img" src="assets/img/projects/ba_pre_opening_account.png" alt="Foto de Sacha">
+                                    <img class="card-img-top card-img" src="assets/img/projects/ba_pre_opening_account.png" alt="Atlántida Web">
                                     <div class="card-body">
-                                        <!-- Ir a https://getbootstrap.com/docs/4.1/components/badge/ -->
-                                        <h5 class="card-title">Atlantida Web</h5>
+                                        <h5 class="card-title">Atlántida Web</h5>
                                         <p class="card-text">Sistema de preapertura de cuentas para el Banco Atlántida</p>
                                         <div class="badges">
                                             <span class="badge html-badge">HTML</span>
@@ -272,9 +283,8 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card">
-                                    <img class="card-img-top card-img" src="assets/img/projects/bitrepublik.png" alt="Foto de Sacha">
+                                    <img class="card-img-top card-img" src="assets/img/projects/bitrepublik.png" alt="Bitrepublik Foundation">
                                     <div class="card-body">
-                                        <!-- Ir a https://getbootstrap.com/docs/4.1/components/badge/ -->
                                         <h5 class="card-title">Bitrepublik Foundation</h5>
                                         <p class="card-text">Sitio web para Bitrepublik Foundation</p>
                                         <div class="badges">
@@ -295,15 +305,14 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 mb-4">
                                 <div class="card">
-                                    <img class="card-img-top card-img" src="assets/img/projects/smartmetrik.JPG" alt="Foto de Sacha">
+                                    <img class="card-img-top card-img" src="assets/img/projects/smartmetrik.JPG" alt="Smartmetrik">
                                     <div class="card-body">
-                                        <!-- Ir a https://getbootstrap.com/docs/4.1/components/badge/ -->
                                         <h5 class="card-title">Smartmetrik</h5>
                                         <p class="card-text">Página web para Smartmetrik</p>
                                         <div class="badges">
                                             <span class="badge html-badge">HTML</span>
                                             <span class="badge css-badge">CSS</span>
-                                            <span class="badge bootstrap-badge">Bootstrap/span>
+                                            <span class="badge bootstrap-badge">Bootstrap</span>
                                         </div>
                                         <div class="mt-3">
                                             <a href="#" data-toggle="modal" data-target="#smartmetrikModal">
@@ -395,24 +404,24 @@
                         <span class="title-line"></span>
                         <div class="row text-left">
                             <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-                                <form>
+                                <form action="https://formspree.io/f/mgedwqeg" method="POST">
                                     <div class="form-group">
-                                        <label class="font-weight-bold" for="name">
-                                            Nombre<span class="input-required"> * </span>
+                                        <label class="font-weight-bold" for="_replyto">
+                                            Email<span class="input-required"> * </span>
                                         </label>
-                                        <input type="email" class="form-control" id="name">
+                                        <input type="email" class="form-control" name="_replyto" id="_replyto">
                                     </div>
                                     <div class="form-group">
                                         <label class="font-weight-bold" for="subject">
                                             Asunto<span class="input-required"> * </span>
                                         </label>
-                                        <input type="email" class="form-control" id="subject">
+                                        <input type="text" class="form-control" id="subject" name="subject">
                                     </div>
                                     <div class="form-group">
                                         <label class="font-weight-bold" for="message">
                                             Mensaje<span class="input-required"> * </span>
                                         </label>
-                                        <textarea class="form-control" id="message" rows="3"></textarea>
+                                        <textarea class="form-control" id="message" rows="3" name="message"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-send-message w-100 font-weight-bold">Enviar</button>
                                 </form>
@@ -424,7 +433,7 @@
         </div>
         <!-- Modals -->
         <!-- Doropharma modal -->
-        <div class="modal fade" id="doropharmaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="doropharmaModal" tabindex="-1" role="dialog" aria-labelledby="doropharmaModal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -438,13 +447,13 @@
                         <div id="carouselIndicators1" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/doropharma.JPG" alt="First slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/doropharma.JPG" alt="Doropharma first slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/doropharma_2.JPG" alt="Second slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/doropharma_2.JPG" alt="Doropharma second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/doropharma_3.JPG" alt="Third slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/doropharma_3.JPG" alt="Doropharma third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators1" role="button" data-slide="prev">
@@ -462,25 +471,24 @@
                                    relacionada con Doropharma: reseña histórica, experiencia,
                                    visión, misión, valores, datos de contacto, productos, etc. Los visitantes
                                    pueden contactar a Doropharma a través del formulario de contacto del sitio
-                                   web<p>
+                                   web.<p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <!--button type="button" class="btn btn-primary">Save changes</button-->
                 </div>
             </div>
             </div>
         </div>
         <!-- Doropharma modal -->
         <!-- Alejandro Brito modal -->
-        <div class="modal fade" id="alejandroBritoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="alejandroBritoModal" tabindex="-1" role="dialog" aria-labelledby="alejandroBritoModal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Alejandro Brito</h5>
+                <h5 class="modal-title" id="alejandroBritoModalLabel">Alejandro Brito</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -490,13 +498,13 @@
                         <div id="carouselIndicators2" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/alejandrobrito.JPG" alt="First slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/alejandrobrito.JPG" alt="Alejandro Brito first slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/alejandrobrito_2.png" alt="Second slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/alejandrobrito_2.png" alt="Alejandro Brito second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/alejandrobrito_3.JPG" alt="Third slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/alejandrobrito_3.JPG" alt="Alejandro Brito third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators2" role="button" data-slide="prev">
@@ -514,7 +522,7 @@
                                    relacionada con el artista venezolano Alejandro Brito: 
                                    biografía, exposiciones, obras, datos de contacto, etc. Los visitantes
                                    pueden contactar al artista a través del formulario de contacto del sitio
-                                   web</p>
+                                   web.</p>
                             </div>
                         </div>
                     </div>
@@ -527,11 +535,11 @@
         </div>  
         <!-- Alejandro Brito modal -->
         <!-- Vip Platinum Services modal -->
-        <div class="modal fade" id="vipPlatinumServicesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="vipPlatinumServicesModal" tabindex="-1" role="dialog" aria-labelledby="vipPlatinumServicesModal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Vip Platinum Services</h5>
+                <h5 class="modal-title" id="vipPlatinumServicesModalLabel">Vip Platinum Services</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -541,13 +549,13 @@
                         <div id="carouselIndicators3" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/vip_platinum_services.jpg" alt="First slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/vip_platinum_services.jpg" alt="Vip Platinum Services first slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/vip_platinum_services2.png" alt="Second slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/vip_platinum_services2.png" alt="Vip Platinum Services second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/vip_platinum_services3.png" alt="Third slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/vip_platinum_services3.png" alt="Vip Platinum Services third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators3" role="button" data-slide="prev">
@@ -579,11 +587,11 @@
         </div>
         <!-- Vip Platinum Services modal -->
         <!-- SmartCAD Web modal -->
-        <div class="modal fade" id="smartCADWebModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="smartCADWebModal" tabindex="-1" role="dialog" aria-labelledby="smartCADWebModal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">SmartCAD Web</h5>
+                <h5 class="modal-title" id="smartcadWebModalLabel">SmartCAD Web</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -593,13 +601,13 @@
                         <div id="carouselIndicators4" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartcad_web.png" alt="First slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartcad_web.png" alt="SmartCAD Web first slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartcad_web_2.png" alt="Second slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartcad_web_2.png" alt="SmartCAD Web second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartcad_web_3.png" alt="Third slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartcad_web_3.png" alt="SmartCAD Web third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators4" role="button" data-slide="prev">
@@ -628,7 +636,7 @@
                                     software de gestión de video (Milestone Xprotect 
                                     Professional), un software de análisis de video (savVi 
                                     de Agent Vi), y un software de reconocimiento automático de 
-                                    placas de vehículos llamado (VaxALR de Vaxtor Systems).
+                                    placas de vehículos (VaxALR de Vaxtor Systems).
                                 </p>
                             </div>
                         </div>
@@ -642,11 +650,11 @@
         </div>
         <!-- SmartCAD Web modal -->
         <!-- Sckola Web modal -->
-        <div class="modal fade" id="sckolaWebModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="sckolaWebModal" tabindex="-1" role="dialog" aria-labelledby="sckolaWebModal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Sckola Web</h5>
+                <h5 class="modal-title" id="sckolaWebModalLabel">Sckola Web</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -656,13 +664,13 @@
                         <div id="carouselIndicators5" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/sckola.png" alt="First slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/sckola.png" alt="Sckola Web first slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/sckola_2.png" alt="Second slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/sckola_2.png" alt="Sckola Web second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/sckola_3.png" alt="Third slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/sckola_3.png" alt="Sckola Web third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators5" role="button" data-slide="prev">
@@ -695,7 +703,7 @@
         </div>
         <!-- Sckola Web modal -->
         <!-- Back Office modal -->
-        <div class="modal fade" id="backOfficeBAModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="backOfficeBAModal" tabindex="-1" role="dialog" aria-labelledby="backOfficeBAModal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -709,13 +717,13 @@
                         <div id="carouselIndicators6" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_back_office.png" alt="First slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_back_office.png" alt="Back Office BA first slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_back_office_2.png" alt="Second slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_back_office_2.png" alt="Back Office BA second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_back_office_3.png" alt="Third slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_back_office_3.png" alt="Back Office BA third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators6" role="button" data-slide="prev">
@@ -745,11 +753,11 @@
         </div>
         <!-- Back Office modal -->
         <!-- Atlántida Web modal -->
-        <div class="modal fade" id="atlantidaWebModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="atlantidaWebModal" tabindex="-1" role="dialog" aria-labelledby="atlantidaWebModal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Atlántida Web</h5>
+                <h5 class="modal-title" id="atlantidaWebModalLabel">Atlántida Web</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -759,13 +767,13 @@
                         <div id="carouselIndicators7" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_pre_opening_account.png" alt="First slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_pre_opening_account.png" alt="Atlántida Web first slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_pre_opening_account_2.png" alt="Second slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_pre_opening_account_2.png" alt="Atlántida Web second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_pre_opening_account_3.png" alt="Third slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/ba_pre_opening_account_3.png" alt="Atlántida Web third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators7" role="button" data-slide="prev">
@@ -794,11 +802,11 @@
         </div>
         <!-- Atlántida Web modal -->
         <!-- Bitrepublik Foundation modal -->
-        <div class="modal fade" id="bitrepublikModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="bitrepublikModal" tabindex="-1" role="dialog" aria-labelledby="bitrepublikModal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Bitrepublik Foundation</h5>
+                <h5 class="modal-title" id="bitrepublikModalLabel">Bitrepublik Foundation</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -808,13 +816,13 @@
                         <div id="carouselIndicators8" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/bitrepublik.png" alt="First slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/bitrepublik.png" alt="Bitrepublik first slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/bitrepublik_2.png" alt="Second slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/bitrepublik_2.png" alt="Bitrepublik second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/bitrepublik_3.png" alt="Third slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/bitrepublik_3.png" alt="Bitrepublik third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators8" role="button" data-slide="prev">
@@ -832,7 +840,7 @@
                                     relacionada con Bitrepublik Foundation: definición de la ONG, 
                                     portafolio, información de contacto, noticias. Los visitantes pueden 
                                     suscribirse para recibir notificaciones vía email sobre actualizaciones 
-                                    en la sección de noticias; asimismo, los visitantes pueden llenar el 
+                                    en la sección de noticias. Los visitantes pueden llenar el 
                                     formulario de contacto para enviar mensajes a la ONG.
                                    </p>
                             </div>
@@ -847,7 +855,7 @@
         </div>
         <!-- Bitrepublik Foundation modal -->
         <!-- Smartmetrik modal -->
-        <div class="modal fade" id="smartmetrikModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="smartmetrikModal" tabindex="-1" role="dialog" aria-labelledby="smartmetrikModal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -861,13 +869,13 @@
                         <div id="carouselIndicators9" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartmetrik.JPG" alt="First slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartmetrik.JPG" alt="Smartmetrik first slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartmetrik2.png" alt="Second slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartmetrik2.png" alt="Smartmetrik second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartmetrik3.png" alt="Third slide">
+                                    <img class="d-block w-100" style="max-height: 300px" src="./assets/img/projects/smartmetrik3.png" alt="Smartmetrik third slide">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselIndicators9" role="button" data-slide="prev">
@@ -882,9 +890,8 @@
                         <div class="row mt-3">
                             <div class="col-sm-12">
                                 <p class="text-center">Desarrollo de página web que permite mostrar
-                                    información relacionada con Smartmetrik: la utilidad de Smartmetrik
-                                    para una empresa, beneficios de usar Smartmetrik, características,
-                                    costo de los planes, información de contacto.
+                                    información relacionada con Smartmetrik: beneficios de usar Smartmetrik, 
+                                    características, costo de los planes, información de contacto.
                                 </p>
                             </div>
                         </div>
@@ -898,11 +905,18 @@
         </div>
         <!-- Smartmetrik modal -->
         <!-- jQuery CDN - Slim version (=without AJAX) -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
         <!-- Popper.JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
         <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <script src="assets/js/collapse_sidebar.js"></script>
+        <script>
+            $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+        </script>
     </body>
 </html>
