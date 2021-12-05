@@ -270,6 +270,10 @@ ul ul a {
     background-color: rgba(117,131,144, .8);
 }
 
+textarea { 
+    resize: none; 
+}
+
 .btn-send-message {
     background-color: #17a2b8;
     color: white;
@@ -308,4 +312,13 @@ ul ul a {
     background-repeat: no-repeat;
     background-position: center;
     margin: -100px 0 0 -100px;
+  }
+
+  footer {
+    background-color: #17a2b8; 
+    padding: 40px 0;
+  }
+
+  footer span {
+    color: white;
   }
