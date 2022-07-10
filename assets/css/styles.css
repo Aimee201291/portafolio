@@ -262,6 +262,21 @@ ul ul a {
     color: white;
 }
 
+.openapi-badge {
+    background: olivedrab;
+    color: white;
+}
+
+.mongodb-badge {
+    background: #3FA037;
+    color: white;
+}
+
+.ionic-badge {
+    background: #498aff;
+    color: white;
+}
+
 .card-img {
     height: 240px;
 }
