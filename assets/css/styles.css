@@ -63,6 +63,7 @@ a[data-toggle="collapse"] {
 #sidebarCollapse {
     position: fixed;
     top: 0.5rem;
+    z-index: 50;
 }
 
 .navbar-collapse li a {
