@@ -222,8 +222,13 @@ ul ul a {
     color: white;
 }
 
-.css-badge {
+.css-badge, .tailwindcss-badge, .reactjs-badge {
     background-color: #42a5f5;
+    color: white;
+}
+
+.javascript-badge {
+    background-color: #e9d54d;
     color: white;
 }
 
@@ -232,7 +237,7 @@ ul ul a {
     color: white;
 }
 
-.asp-net-badge {
+.asp-net-badge, .net-badge {
     background: #7f59ad;
     color: white;
 }
@@ -242,7 +247,7 @@ ul ul a {
     color: white;
 }
 
-.angularjs-badge {
+.angularjs-badge, .practicecs-badge, .googlesuite-badge {
     background: #e43436;
     color: white;
 }
@@ -257,7 +262,7 @@ ul ul a {
     color: white;
 }
 
-.spring-badge {
+.spring-badge, .nodejs-badge {
     background: #59a25d;
     color: white;
 }
